@@ -1,0 +1,21 @@
+{
+  "name": "6th-anniversary",
+  "version": "0.0.0",
+  "description": "kosenconf 6th anniversary website",
+  "scripts": {
+    "start": "./node_modules/harp/bin/harp server src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kosenconf/6th-anniversary.git"
+  },
+  "author": "jigsaw (http://jgs.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kosenconf/6th-anniversary/issues"
+  },
+  "homepage": "https://github.com/kosenconf/6th-anniversary",
+  "devDependencies": {
+    "harp": "~0.12.1"
+  }
+}
