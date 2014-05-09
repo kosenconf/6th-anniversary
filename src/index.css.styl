@@ -1,0 +1,128 @@
+$main-color = #FF4318
+$sub-color = #27CC35
+$back-color = #99714C
+$sub-back-color = #CC7627
+$font-color = #FFFFFF
+$foot-color = #664B32
+$text-back-color = #FFFEEC
+
+body
+  background-color $back-color
+
+header
+  background-color $sub-color
+  z-index 2
+
+  h1
+    margin 0
+    font-size 400%
+    color $font-color
+    padding-left 10%
+    padding-right 10%
+
+#hero-container
+  width 100%
+  height 70%
+  background-color #FFF
+  background-image url('//farm6.staticflickr.com/5330/9061386623_de8fb3dcb0_h.jpg')
+  background-size cover
+  background-position bottom
+  z-index -1
+  top 0
+  left 0
+  position fixed
+
+#six-container
+  margin 0
+  padding 0
+  text-align center
+
+  #six
+    font-family 'Exo', sans-serif
+    font-size 2800%
+    color $main-color
+    line-height 70%
+    padding-top 15%
+    margin-bottom -5%
+
+article
+  background-color $back-color
+  z-index 3
+  min-height 700px
+
+  #about
+    background-color $text-back-color
+    padding-left 10%
+    padding-right 10%
+    padding-bottom 5%
+    margin-bottom 10%
+    padding-top 5%
+
+    h1, h2
+      margin .2em
+      z-index 4
+
+    #map
+      margin auto
+
+      iframe
+        width 100%
+        min-height 400px
+
+    #apply
+      margin auto
+
+  #message
+    padding-left 10%
+    padding-right 10%
+    margin-bottom 10%
+
+    #june29
+      img
+        width 200px
+        height 200px
+        border-radius 100px
+
+    #text-container
+      background $text-back-color
+      position relative
+      border-radius 8px
+
+      #text
+        padding 1em
+
+      &:after
+        right 100%
+        top 8%
+        content ' '
+        height 0
+        width 0
+        position absolute
+        border solid transparent
+        border-right-color $text-back-color
+        border-width 30px
+        margin-top 30px
+
+  #kc5
+    background-color $sub-color
+    padding-left 10%
+    padding-right 10%
+    padding-bottom 10%
+
+    .photo
+      margin 20px
+      background-color #777
+      height 200px
+      font-family 'Exo', sans-serif
+      color #FFF
+      font-size 24px
+
+footer
+  background-color $foot-color
+  color $font-color
+
+  p
+    margin 0
+
+  #copyright
+    text-align center
