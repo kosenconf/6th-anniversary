@@ -5,12 +5,16 @@ block links
 
 block body
   header
-    h1 #kosenconf
+    .menu
+      a.title(href='#') #kosenconf
+      a.item(href='#about') 概要
+      a.item(href='#message') メッセージ
+      a.item(href='#contents') タイムテーブル
   #hero-container
   #six-container
     #six 6
   article
-    section#about.pure-g
+    section#about.pure-g(name='about')
       h1.pure-u-1-1 高専カンファレンス6周年記念パーティ
       h2.pure-u-1-1 日程: 2014年6月14日
       h2.pure-u-1-1 会場: ピクシブ株式会社
