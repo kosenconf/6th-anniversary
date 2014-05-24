@@ -133,6 +133,9 @@ block body
   footer
     p#copyright
       small &copy; kosenconf-6th-anniversary
-    .pure-g
-      #facebook-container.pure-u-1-2 facebook plugin
-      #twitter-container.pure-u-1-2 twitter plugin
+    #social
+      a(href="https://twitter.com/share", class="twitter-share-button", data-related="jasoncosta", data-lang="ja", data-size="large", data-count="none") Tweet
+      script !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      .fb-like(data-href="http://kosenconf.github.io/6th-anniversary", data-layout="button_count", data-action="like" data-show-faces="true", data-share="true")
+      #fb-root
+      script (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1388727331349705&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
