@@ -13,9 +13,17 @@ header
   background-color $sub-color
   z-index 2
   margin 0
-  font-size 400%
   padding-left 10%
   padding-right 10%
+
+  @media screen and (min-width: 320px)
+    font-size 200%
+  @media screen and (min-width: 480px)
+    font-size 200%
+  @media screen and (min-width: 760px)
+    font-size 200%
+  @media screen and (min-width: 1000px)
+    font-size 400%
 
   a
     text-decoration none
@@ -55,11 +63,19 @@ header
 
   #six
     font-family 'Exo', sans-serif
-    font-size 2800%
     color $main-color
     line-height 70%
     padding-top 15%
     margin-bottom -5%
+
+    @media screen and (min-width: 320px)
+      font-size 1200%
+    @media screen and (min-width: 480px)
+      font-size 1200%
+    @media screen and (min-width: 760px)
+      font-size 1200%
+    @media screen and (min-width: 1000px)
+      font-size 2800%
 
 article
   background-color $back-color
@@ -164,4 +180,5 @@ footer
     .twitter-share-button, .fb-like
       margin-left 20%
       margin-top 5%
-      -webkit-transform scale(3, 3)
+      @media screen and (min-width: 1000px)
+        -webkit-transform scale(3, 3)
